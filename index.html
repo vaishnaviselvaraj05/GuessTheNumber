@@ -21,6 +21,12 @@
             score.textContent="Score:"+tscore
             console.log("WRONG!!")
             res.textContent="WRONG!!"
+
+            if(tscore == 0){
+            alert("Game Over! The number was " + rnum)
+            document.querySelector("button").disabled = true
+            }
         }
     }
+
 </script>
